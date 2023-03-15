@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"target": "ES5",
+		"jsx": "preserve",
+		"strictFunctionTypes": true
+	},
+	"include": [
+		"scmw_common.js"
+	]
+}

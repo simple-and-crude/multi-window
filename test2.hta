@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+	<script type="text/vbscript">
+
+	</script>
+	<script type="text/javascript">
+		debugFunc = (function () {
+			var XYpos = {
+				x: 0,
+				y: 0,
+				log: function () {
+					return this.x + ',' + this.y;
+				}
+			};
+			return [
+				function (n) {
+					return 100000000 + XYpos.x * 10000 + XYpos.y;
+				}, function (n) {
+					return XYpos.log();
+				}, function () {
+					XYpos.x = Math.floor(Math.random() * 1920);
+					XYpos.y = Math.floor(Math.random() * 1080);
+					XYpos.n = Math.floor(Math.random() * 10);
+				}, function () {
+				}
+			];
+		}());
+		function debugg(times, step, param) {
+			var timer = [0, 0, 0, 0], a, start;
+			for (var i = 1; i <= times; i++) {
+				var n = Math.floor(Math.random() * 2);
+				var ns = Math.floor(Math.random() * 2) ? true : false;
+				start = new Date().getTime();
+				debugFunc[a](ns);
+				timer[a++] += new Date().getTime() - start;
+				start = new Date().getTime();
+				debugFunc[a](n);
+				timer[a++] += new Date().getTime() - start;
+				start = new Date().getTime();
+				debugFunc[a]();
+				timer[a++] += new Date().getTime() - start;
+				start = new Date().getTime();
+				debugFunc[a]();
+				timer[a++] += new Date().getTime() - start;
+				if (i % step == 0) {
+					alert(timer.join(" "));
+				}
+			}
+		}
+	</script>
+	<button onclick="javascript:debugg(2500, 500, 5);">move</button>
+</body>
+
+</html>

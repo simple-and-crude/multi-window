@@ -1,0 +1,72 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>最大化页面</title>
+	<object id="max" classid="clsid:ADB880A6-D8FF-11CF-9377-00AA003B7A11">
+		<param name="Command" value="Maximize" />
+	</object>
+	<script type="text/javascript" language="javascript">
+		Object.defineProperty(objTest = {}, 'name', {
+			get: function () {
+				alert("get");
+			},
+			set: function (value) {
+				alert("set");
+			}
+		});
+		window.onload = function () {
+			subWindow = showModelessDialog("test2.hta", window);
+		};
+		closedList = {};
+		debugFunc = [
+			function (id, data) {
+				closedList[id] = !data;
+				a = ((data -= 100000000) - (data %= 10000)) / 10000;
+				b = data;
+			}, function (id, data) {
+				closedList[id] = !data;
+				var i = data.indexOf(',');
+				a = Number(data.substring(0, i++));
+				b = Number(data.substring(i, data.length));
+			}, function (n, s) {
+				if (n) 22345, s ? (32345, 42345, 52345) : void (0);
+				else 12345;
+			}, function (n, s) {
+			}, function (n, s) {
+			}, function (n, s) {
+			}
+		];
+		var a, b;
+		function debugg(times, step, param) {
+			var timer = [0, 0/*, 0, 0, 0, 0*/], start, i = 0;
+			while (times) {
+				var nowFunc = 0,
+					id = Math.floor(Math.random() * 100000);
+				subWindow.debugFunc[2];
+
+				a = 0, b = 0;
+				start = new Date().getTime();
+				debugFunc[nowFunc](id, subWindow.debugFunc[0]());
+				timer[nowFunc++] += new Date().getTime() - start;
+
+				a = 0, b = 0;
+				start = new Date().getTime();
+				debugFunc[nowFunc](id, subWindow.debugFunc[1]());
+				timer[nowFunc++] += new Date().getTime() - start;
+
+				if (++i % step == 0) {
+					alert(timer.join(" "));
+					times--;
+					i = 0;
+				}
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<button onclick="javascript:debugg(20, 100);">move</button>
+</body>
+
+</html>

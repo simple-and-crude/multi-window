@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+	这是主窗口
+-->
+<html lang="ch">
+
+<head>
+	<meta charset="UTF-8">
+	<HTA:Application
+		APPLICATION=yes
+		Border=none
+		contextMenu=no
+		innerBorder=no
+		selection=no
+		singleInstance=yes
+		Scroll=no
+	/>
+	<script type="text/vbscript">
+		'防止闪现
+		me.resizeto 0, 0
+	</script>
+	<script src="scmw_common.vbs" type="text/vbscript"></script>
+	<script src="scmw_common.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		window.onload = function () {
+			SCMultiWindow.initialize(); // 初始化
+			SCMultiWindow.setSiz(new SCMW_XYPair({
+				x: 200, // 窗口宽度
+				y: 80 // 窗口高度
+			}));
+			SCMultiWindow.initDialog({ // 可以根据用户要求配置窗口数量大小
+				name: "sub_1",
+				config: {
+					dialogLeft: SCMultiWindow.XYpos.x + SCMultiWindow.XYsiz.x + "px",
+					dialogTop: SCMultiWindow.XYpos.y + "px"
+				}
+			});
+		}
+	</script>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+			background: rgb(247, 99, 12);
+			user-select: none;
+		}
+
+		#main {
+			margin: 2px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: #fff;
+		}
+	</style>
+	<title>主要窗口</title>
+</head>
+
+<body>
+	<div id="main">
+		<button onclick="check">check</button>
+		<a id="look"></a>
+	</div>
+</body>
+
+</html>
