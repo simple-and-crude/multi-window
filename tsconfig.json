@@ -12,5 +12,6 @@
 		"strictPropertyInitialization": true,
 		"alwaysStrict": true,
 		"noImplicitThis": true,
+		"declaration": true,
 	}
 }

@@ -4,7 +4,7 @@
  * @license GPL-3.0-or-later
  * @see https://github.com/simple-and-crude/multi-window
  */
-declare namespace SCMultiWindow { };
+"use strict";
 declare var dialogArguments: [
 	id: number,
 	PARENT_GLOBAL: typeof SCMultiWindow.GLOBAL,

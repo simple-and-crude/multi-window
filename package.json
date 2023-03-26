@@ -8,6 +8,7 @@
 	"files": [
 		"scmw_common.vbs",
 		"scmw_common.js",
+		"scmw_common.d.ts",
 		"scmw_main.js",
 		"LICENSE",
 		"README.md",
@@ -35,6 +36,9 @@
 	},
 	"devDependencies": {
 		"typescript": ""
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"homepage": "https://github.com/simple-and-crude/multi-window#readme"
 }
