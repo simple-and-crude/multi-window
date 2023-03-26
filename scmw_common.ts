@@ -1,5 +1,10 @@
-/**|简·陋| 多窗体控制器对象 */
-namespace SCMultiWindow { };
+/**
+ * |简·陋| 多窗体控制器
+ * @version 0.9.0
+ * @license GPL-3.0-or-later
+ * @see https://github.com/simple-and-crude/multi-window
+ */
+declare namespace SCMultiWindow { };
 declare var dialogArguments: [
 	id: number,
 	PARENT_GLOBAL: typeof SCMultiWindow.GLOBAL,

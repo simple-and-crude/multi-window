@@ -1,0 +1,40 @@
+{
+	"name": "@simple-and-crude/multi-window",
+	"version": "0.9.0",
+	"description": "Magnetic adsorbable window for HTML Application (HTA)",
+	"scripts": {
+		"build": "npx tsc"
+	},
+	"files": [
+		"scmw_common.vbs",
+		"scmw_common.js",
+		"scmw_main.js",
+		"LICENSE",
+		"README.md",
+		"src/demo.gif"
+	],
+	"keywords": [
+		"magnetic",
+		"magnet",
+		"adsorption",
+		"drag",
+		"magnetic adsorption",
+		"hta",
+		"ie",
+		"es3",
+		"html application"
+	],
+	"author": "e0selmy4v",
+	"license": "GPL-3.0-or-later",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/simple-and-crude/multi-window.git"
+	},
+	"bugs": {
+		"url": "https://github.com/simple-and-crude/multi-window/issues"
+	},
+	"devDependencies": {
+		"typescript": ""
+	},
+	"homepage": "https://github.com/simple-and-crude/multi-window#readme"
+}
