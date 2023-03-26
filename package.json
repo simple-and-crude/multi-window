@@ -5,6 +5,7 @@
 	"scripts": {
 		"build": "npx tsc"
 	},
+	"types": "./scmw_main.d.ts",
 	"files": [
 		"scmw_common.vbs",
 		"scmw_common.js",

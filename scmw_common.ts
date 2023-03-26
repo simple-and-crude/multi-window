@@ -4,7 +4,9 @@
  * @license GPL-3.0-or-later
  * @see https://github.com/simple-and-crude/multi-window
  */
-"use strict";
+namespace SCMultiWindow {
+	export const version = "0.9.0";
+}
 declare var dialogArguments: [
 	id: number,
 	PARENT_GLOBAL: typeof SCMultiWindow.GLOBAL,

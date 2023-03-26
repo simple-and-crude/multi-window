@@ -3,20 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>次要窗口</title>
-	<script src="../scmw_common.vbs" type="text/vbscript"></script>
-	<script src="../scmw_common.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		window.onload = function() {
-			document.onmousemove = SCMultiWindow.event.move;
-			document.onmouseup = SCMultiWindow.event.up;
-			document.onmousedown = SCMultiWindow.event.down;
-			SCMultiWindow.initialize();
-		}
-		function check() {
-			SCMultiWindow.magnetic = !SCMultiWindow.magnetic;
-			alert(SCMultiWindow.WINDOW_ID);
-		}
-	</script>
+	<script type="text/vbscript" src="../scmw_common.vbs"></script>
+	<script type="text/javascript" src="../scmw_common.js"></script>
+	<script type="text/javascript" src="./sub_1.js"></script>
 	<style>
 		* {
 			padding: 0;
